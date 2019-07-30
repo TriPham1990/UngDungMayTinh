@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<fieldset style="color:chartreuse; background: azure; width: 230px; height: 280px;">
+<br>
+    <label><input style="color: blue; background: white; width: 215px; height: 50px; font-size: 30px" type="text"
+              id="hienthi"></label>
+<br>
+<br>
+<table>
+    <tr>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="AC"
+                   onclick="AC()"></th>
+    </tr>
+    <tr>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="1"
+                   onclick="number1()"></th>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="2"
+                   onclick="number2()"></th>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="3"
+                   onclick="number3()"></th>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="+"
+                   onclick="cong()"></th>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="*"
+                   onclick="nhan()"></th>
+    </tr>
+    <tr>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="4"
+                   onclick="number4()"></th>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="5"
+                   onclick="number5()"></th>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="6"
+                   onclick="number6()"></th>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="-"
+                   onclick="tru()"></th>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="/"
+                   onclick="chia()"></th>
+    </tr>
+    <tr>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="7"
+                   onclick="number7()"></th>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="8"
+                   onclick="number8()"></th>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="9"
+                   onclick="number9()"></th>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value="="
+                   onclick="bang()"></th>
+        <th><input style="color: red; background: white; width: 40px;height: 40px" type="button" value=","
+                   onclick="phay()"></th>
+    </tr>
+</table>
+</fieldset>
+<script>
+    function number1() {
+        document.getElementById("hienthi").value += 1;
+    }
+
+    function number2() {
+        document.getElementById("hienthi").value += 2;
+    }
+
+    function number3() {
+        document.getElementById("hienthi").value += 3;
+    }
+
+    function number4() {
+        document.getElementById("hienthi").value += 4;
+    }
+
+    function number5() {
+        document.getElementById("hienthi").value += 5;
+    }
+
+    function number6() {
+        document.getElementById("hienthi").value += 6;
+    }
+
+    function number7() {
+        document.getElementById("hienthi").value += 7;
+    }
+
+    function number8() {
+        document.getElementById("hienthi").value += 8;
+    }
+
+    function number9() {
+        document.getElementById("hienthi").value += 9;
+    }
+
+    function cong() {
+        document.getElementById("hienthi").value += "+";
+    }
+
+    function nhan() {
+        document.getElementById("hienthi").value += "*";
+    }
+
+    function tru() {
+        document.getElementById("hienthi").value += "-";
+    }
+
+    function chia() {
+        document.getElementById("hienthi").value += "/";
+    }
+
+    function phay() {
+        document.getElementById("hienthi").value += ".";
+    }
+
+    function AC() {
+        document.getElementById("hienthi").value = " ";
+    }
+
+    function bang() {
+        let bang = document.getElementById("hienthi");
+        bang.value = eval(bang.value);
+    }
+
+</script>
+</body>
+</html>
